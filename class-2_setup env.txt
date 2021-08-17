@@ -10,5 +10,5 @@ version 11 - for the mac users
 
 2. programming editor : 
 eclipse - free editor 
-intellij - 
+intellij - not free, there is a community edition but not that helpful
 

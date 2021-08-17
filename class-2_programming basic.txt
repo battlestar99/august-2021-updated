@@ -1,0 +1,129 @@
+computer programming : 
+
+step by step instructions to the computer
+
+compiler : covert programming lanuag to binary(machine language) 
+
+
+1. structure of java 
+
+java project >> just a folder that comes with jre system library
+
+package - is a java folder 
+
+java class - is the basic unit of java 
+
+a class that you can run - main method of java 
+a class that can not run - doesn't have the main method of java
+
+scope - class, methods, conditional statments, looping
+statement - ends with ; 
+
+java is a case sensitive programming lanague 
+
+A a 
+
+
+2. how to store data in a program
+
+problem solve - 
+money, address, ssn, firstname, lastname
+
+whole number >> 12 , 100 >> integer 
+name, address >> String 
+double, float >> 12.10
+boolean >> true and false 
+
+int 
+String 
+boolean 
+
+100 >> 
+data type: java has certain data type
+variable >> memory space 
+
+int x = 100;
+
+int y = 200; 
+
+String name="john";
+
+double z = 10.20; 
+
+x is an integer type of variable and the value of x is 100 
+
+two step process: 
+
+step 1: declaring variable
+int number;
+
+Step 2: initializa the variable with a value
+
+number=23;
+
+2 steps together
+int number=23;
+
+identifier >> 
+
+datatype : int , String, double, boolean
+
+datatype name_of_variable = value_of_variable ; 
+
+int x = 299;
+
+String name = "michael";
+
+double y = 10.23;
+
+boolean abc = true; 
+
+2 steps process 
+
+1. declare a variable
+2. initialize the variable with a value
+
+
+
+3. conditional statment 
+4. looping statement 
+5. array - 
+6. methods/function 
+
+
+7. object oriented programming ( OOP) 
+
+two things you need to do 
+
+1. practice >> by doing homework
+2. questions >> write the answers 
+
+
+9335 Lee hwy, fairfax, VA, 22031
+
+9335 Lee hwy, Austin, TX, 10101
+
+63737637
+
+
+credit scroe - 
+
+c = 	
+
+debt 
+how many times you missed payments
+are you renting - 
+if you have your own home=
+
+
+
+
+
+
+
+
+
+
+
+
+

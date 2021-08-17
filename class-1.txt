@@ -1,0 +1,60 @@
+Monday and wednesday 
+
+7 PM 
+
+anik@agile1tech.com 
+
+github - 
+help session - wednesday 2PM 
+
+Every week - Home work 
+
+7-8 homeworks 
+
+You can not miss any class - 
+2
+3
+4
+
+Goal of the course: 
+
+1. learn programming specifically java 
+2. using selenium with java 
+3. TestNG and cucumber 
+4. code management - maven, git, jenkins 
+
+
+what is computer programming? 
+
+add this two numbers
+then subtract this value
+do iteraraion for 50 times
+if your map show there is rain 
+remind me about the umbrella 
+
+programming language ; 
+
+java, python, c, C# 
+
+
+1. jdk - java development kit 
+2. programming editor - eclipse 
+
+
+Email: anik@agile1tech.com
+password: Agileteach12++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+set up the environment : 
+
+1. jdk installed - java development kit 
+
+jre - java runtime environment 
+core java library - 
+
+version 8 - for all the windows user
+version 11 - for the mac users 
+
+2. programming editor : 
+eclipse - free editor 
+intellij - 
+

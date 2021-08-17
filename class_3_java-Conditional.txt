@@ -1,0 +1,131 @@
+1. java setup - jdk + eclipse 
+2. how to store data 
+data type - int, String, double, boolean
+variables - is a name - identifier 
+key note: you can not give a space 
+number_one
+data / value : 
+12 mike 233443
+
+you want to store someone's first name
+driving licence number 
+ssn - 242343 
+
+boolean 
+true or false 
+
+int num = 12; 
+
+int num; // declaretion of the variable 
+
+num = 32; 
+
+String name = "michael";
+
+statements - instructions 
+scope - classes, methods, conditional statments, looping
+
+conditional statement: are statements that based on
+conditions 
+
+condition - 
+true
+false 
+
+compartin two situations 
+
+if(condition) {
+
+// what code to execute 
+
+}
+
+= means assignment of value 
+
+x = 12; 
+
+x==12; false/true
+
+if
+else
+if
+else
+if
+if
+if
+else
+
+ true and false >> false 
+or 
+
+grading system 
+if 
+if number >90  - A
+else if number > 80 - B
+else if number > 70 - C 
+else <  - F
+
+
+
+problem: 
+we want to make a car payment calculator 
+
+find monthly payment - 
+
+solution: 
+
+base car price - 20000
+admin fee - 500 
+downpayment - 3000 
+tax  - 5 percent 
+temp registration fee - 200
+how many months - 60/72/84 
+credit score - 600 
+
+   creditscroe=>750 - 1 
+   creditscroe<750 and >700 -1.5
+   creditscort >650 and <=700
+    creditscort >600 and <=650
+
+financing >> 
+
+
+
+
+
+
+
+
+
+
+200 , 5 percent tax 
+
+200 *(5/100)=10 + 200=210
+
+5 + 100 >> 105
+
+scanner 
+
+&&
+||
+
+double x = 12.23
+int x = 12;
+
+System.out.print("Please enter temperature in Celsius : ");
+        double celsius = Double.parseDouble(reader.readLine());
+        double fahrenheit = (9.0/5.0)*celsius + 32;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,136 @@
+java - 
+
+1. java structure - setup 
+2. datatype, variables and data 
+3. conditional statement ( if, else, else if) 
+4. looping , array - we will discuss later 
+5. java method - library
+6. OOP - object oriented programming - discuss later 
+
+java method - 
+
+main method - class with a main method 
+we can run the class - 
+runnable class - 
+
+non-runnable class - without a main method 
+
+traditional programming concept - 
+to create re-usuable methods - 
+to create re-usuale java code 
+
+object oriented programming concept 
+
+method1{
+write some code 
+
+}
+
+outline of what we need to learn: 
+
+1. how to create java method 
+
+accessModifier returntype nameofthemethod(parameters) 
+{
+
+return returntype; 
+}
+
+2. how to use the java method 
+
+1. you have to create an object of the class where the
+method is located 
+object - a copy of the class 
+
+
+3. how to use the java method from java library 
+
+
+how to create a java method >> 
+
+public static void main(String args[]){
+
+// all the codes are inside the main method 
+
+}
+
+creating a general method 
+
+public >> access modifier 
+return type >> data type 
+name the method >> identifier , verb for creating method 
+
+public int addtwonumbers(parameters){
+
+return 12; 
+}
+
+// creating a method - non runnable class
+
+public boolean ifeligiableforloan(int creditscore, int income){
+
+boolean flag; 
+
+if (crediscore>700 && income>50000){
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+getText
+
+String 
+
+String webpagevalue = driver.gettext();
+
+20 methods - 
+
+gettext >> you need to find out from which is class the 
+method is coming
+
+programming library - 
+
+non-runnable classes >> methods 
+
+1000 classes >> 5000 methods 
+
+documentation of the programming >> 
+
+3rd party library - 
+
+variables - 
+
+object - reference variable 
+
+// two steps 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

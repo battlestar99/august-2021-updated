@@ -120,6 +120,53 @@ object - reference variable
 
 // two steps 
 
+1. main method >> runnable class 
+
+public static void main (String args[]){
+ 
+// instuctions or code for computer 
+}
+
+traditional way - 
+
+2. class without main method >> non-runnable 
+method / function 
+convertiong celsius to farenhite 
+
+non-runnable class - design a system
+or create prototype of a system 
+
+java class - prototype - design 
+
+car >> 
+
+what the car can do - function - acceleate, move forward, backward
+what the car has - door, color, engine
+
+design a class >> prototype 
+
+what the class can do >> functions 
+what attribute the class >> properties  
+
+object - 
+
+static >> is part of the class and not part of any object
+
+static >> you don't need to create object 
+non-static >> you need to create multiple object 
+
+library - selenium - 3rd party programming library 
+
+this library has all the functions to interact with a 
+web browser 
+
+selenium library >> jar file 
+
+non - runnbale class >> there are function
+
+webdriver - get, gettext, navigate
+webelement - click, sendkeys
+select - selectbyvisisbaletest, 
 
 
 

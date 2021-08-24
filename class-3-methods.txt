@@ -168,6 +168,32 @@ webdriver - get, gettext, navigate
 webelement - click, sendkeys
 select - selectbyvisisbaletest, 
 
+1. we need jar files >> 
+
+2. we need to have driver file - chrome browser
+chromedriver file
+
+92 - google chrome browser version 
+
+
+
+
+
+1. we need to be able to use the selenium library 
+functions - 20 functions from 3/4 different 
+
+
+
+opening a browser
+navigating to a url 
+clicking on any webelement 
+
+every object represents one browser instance in 
+webdriver class
+
+
+
+
 
 
 

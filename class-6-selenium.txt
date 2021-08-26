@@ -1,0 +1,141 @@
+key points: 
+
+1. selenium is a programming library >> 
+java, python, C#, javascript 
+
+programming library: 
+ java core library >> jdk 
+
+oracle - maintains java core library 
+
+free - you don't have to pay
+
+open-source - anyone can work on developing the library 
+
+2. 
+datbase >> jdbc 
+api >> http client
+TestNG >> 
+20 functions - 
+
+3. 
+function name >> go 
+
+1. you need to find the library file - jar file
+2. add the jar file to your project
+
+why we are using selenium? what selenium library 
+can do? 
+
+  1. browser-automation , chrome, IE, mozila, safari
+  2. broswer based - web based application 
+
+90 percent apps basically interest based - runs in a browser 
+
+our test >> using the web application in a browser 
+
+what we need for testing 
+TestNG , Cucumber 
+  1. test case 
+  2. test report 
+  3. test suite 
+
+
+Sample test case for yahoo sign up page 
+
+step 1: launch google chrome browser 
+step 2: navigating to sign up pagehttps://login.yahoo.com/account
+step 3: enter first name
+step 4: enter last name
+step 5: enter email address
+step 6: enter password 
+step 6: enter phone number
+step 7: select your country
+Step 8: enter your phone number
+step 9: select 
+
+Test script , automated test case 
+
+browser- automation 
+
+   1. interaction with the browser
+  2. interaction with the web element 
+
+web elements: 
+
+1. text box
+2. button
+3. link 
+4. drop down
+5. pop ups - java script and windows 
+6. tables 
+
+cookies >> 
+
+interacting with the web element
+
+    step 1: find or locate the web element 
+
+HTML and CSS 
+
+HTML builds all the web element
+CSS provides the desig, color, formatting 
+
+human 
+attribute = value 
+name = gk, anik, mike 
+ssn = 324234, 43423
+
+firstname web element , 10 attributes , 10 values 
+<input type="text" id="usernamereg-firstName" class="ureg-fname input-with-icon icon-name " autocomplete="given-name" name="firstName" placeholder="First&nbsp;name" aria-label="First&nbsp;name" value="" maxlength="32" aria-required="true" data-rapid-tracking="true" data-ylk="elm:input;elmt:fname;slk:first-name;" aria-invalid="false">
+
+last name webelement 
+
+<input type="text" id="usernamereg-lastName" class="ureg-lname " name="lastName" autocomplete="family-name" placeholder="Last&nbsp;name" aria-label="Last&nbsp;name" value="" maxlength="32" aria-required="true" data-rapid-tracking="true" data-ylk="elm:input;elmt:lname;slk:last-name;" aria-invalid="false">
+
+attirbutes that we can use to find web element
+applicable for all web element 
+name
+id
+xpath >> absolute xpath, relative xpath
+css selector 
+
+applicable for links, that starts with anchor tag
+a ta 
+linktext
+partiallintext
+
+finding multiple elements 
+class
+tag
+
+weblement 
+
+int x = 12
+String name="mike"
+
+
+validation function 
+
+isdisplayed
+isenabled
+isSelected
+gettext
+getcurrentUrl
+getTitle
+
+
+   step 2: action on web element
+
+
+
+
+
+
+
+
+
+
+
+
+

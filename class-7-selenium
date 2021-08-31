@@ -1,0 +1,69 @@
+Finding web element 
+Interacting with web element 
+
+Automated Test Scripts >> 
+class >> Test scripts 
+
+Requirements >> user stories 
+
+Test case based on web application 
+
+interact with the web application 
+
+Test case >> steps >> expected result , actual result
+pass/fail 
+
+how to configure a automation testing project? 
+
+
+if you get a red sign >> the code is not compilable 
+syntax error 
+
+>> not syntax error and you are running error >> 
+run time exception 
+
+it takes time to load a page >> 
+
+10s maximum >> 2 s>> 7s>> 9s
+
+
+
+
+wait options in selenium: 
+
+thread.sleep
+implicit wait >> if you want your code to execute 
+after all the web elements are loaded in the page
+you should use implicit wait 
+10s means the code will wait maximum 10 s
+1s >> the code will go to next step after 1s
+2s
+9s
+11s
+
+explicit wait>> if you want to check if any particulat 
+web element is available in the page or not - 
+
+college >> explicit 
+
+positive value >> supposed to login>> you are in a new url 
+
+negative value >> not supposed to login>> you are in the same page 
+
+OOP class >> 
+functions 
+properties 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

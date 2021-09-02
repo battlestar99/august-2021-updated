@@ -1,0 +1,100 @@
+class is a design or prototype of a system/software
+class car{
+
+// properties the car will have 
+int mileage; 
+String vinNumber; 
+String ownername; 
+
+// what car can do
+
+public void start(){}
+public void run(){}
+
+
+
+}
+
+
+car a = new car()
+car b = new car()
+class is a design or prototype: 
+
+properties - global variable
+can do - methods 
+
+Test scripts >> 
+Test case >> steps/actions
+
+20 webelements >> locations are not working/
+id for all 20 web elements 
+40 
+20 weblements again
+50 different test scripts >> 
+
+300 steps >> 
+
+1000 steps>> 
+
+two types of automation testing framework
+1. object driven>> when we seperate the webelements
+from the test scripts we can call it object driven frameowrk 
+2. data driven >> when we seperate the test data from 
+test scripts 
+xml file
+excel file
+database file 
+
+hybrid framework 
+
+web element/object driven frameowork >> 
+
+we can create non-runnable class to store all the weblement in functions, so whenever we need them
+we can call them and use them
+
+page object model class >> non-runnable class
+
+Steps of creating page object model: 
+
+1. create page object model class for each webpage in your system
+2. create a constructor to enforce to use the same driver in test scripts and page object model class
+3. creating one function for each web element 
+
+10 web pages >> you should have 10 page object model class
+
+50 webelements 8 different page object 
+
+500 different steps 
+
+requirements 
+
+10 requirements >> 30 test scenarios 
+
+30 test case
+30 test scripts 
+
+
+
+page object models are already created 
+
+inventory: 
+
+how many method/functions you should have?
+
+depends on how many weblements 
+
+why do you create page object model? 
+how do you create page object model? 
+
+
+
+
+
+
+
+
+
+
+
+
+

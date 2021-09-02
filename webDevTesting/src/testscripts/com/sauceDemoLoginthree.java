@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import pages.loginPage;
 
-public class sauceDemoLoginTwo {
+public class sauceDemoLoginthree {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -18,7 +18,6 @@ public class sauceDemoLoginTwo {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\Agile1Tech\\Desktop\\libraries\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		
 		loginPage lp = new loginPage(driver);
 		
 		driver.manage().deleteAllCookies();
@@ -39,8 +38,6 @@ public class sauceDemoLoginTwo {
 		System.out.println(title);
 		
 		driver.quit();
-	
-		
 
 	}
 

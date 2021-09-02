@@ -7,6 +7,23 @@ public class facebook {
 	String username; 
 	String password; 
 	
+	// constructor 
+	// to construct an object constructor is created
+	// multiple constructor with different parameter
+	// constructor overloading
+	
+	public facebook(String username, String password) {
+		
+		this.username=username; 
+		this.password=password; 
+		
+	}
+	
+	public facebook(int x) {
+		
+		System.out.println(x);	
+	}
+	
 	
 	public facebook() {
 	
@@ -50,11 +67,22 @@ public class facebook {
 		
 	}
     
+    // having multiple methods with same name
+    // and different parameter is called method overloading
+    
+    
     public void call() {
 		
-		System.out.println("calling");
+		System.out.println("this is first calling");
 		
 	}
+    
+    public int call(String x) {
+    	
+    	System.out.println("this is second calling");
+    	return 12; 
+    
+    }
 
 
 

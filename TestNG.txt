@@ -3,3 +3,12 @@ setup
 1. plugin
 2. libary
 
+Annoationas >> how to organize scripts 
+Assertions >> how to create pass/fail criterion
+reporting >> how report is generated 
+Test Suite >> creating test suite using xml 
+Data driven testing>> data driven testing framework 
+using XML 
+
+others>> enables, dependsonMethods
+

@@ -1,6 +1,8 @@
 package seleniumPackage1;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class seleniumRun {
@@ -15,16 +17,20 @@ public class seleniumRun {
 	// this will also open a chrome browser 	
 		WebDriver driver = new ChromeDriver();
 		
-		WebDriver driver1 = new ChromeDriver();
-		
 		// navigating to the url 
 		driver.get("https://login.yahoo.com/account/create");
 		
 		Thread.sleep(2000);
 		
-		driver1.get("https://twitter.com/");
+		WebElement header = driver.findElement(By.xpath("//*[@id=\"account-attributes-challenge\"]/h1"));
+		
+		System.out.println(header.getText());
+		
+		WebElement firstNameTextBox = driver.findElement(By.xpath("//*[@id=\"usernamereg-firstName\"]"));
+		firstNameTextBox.sendKeys("GK");
 		
 		Thread.sleep(3000);
+		
 		
 		driver.quit();
 		

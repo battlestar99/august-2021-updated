@@ -22,7 +22,7 @@ public class carPaymentV1 {
 		
 		
 		
-		taxPay = (basecarPrice+adminfee)*(tax/100);
+		taxPay = Utility.taxPayCalculation(basecarPrice, adminfee, tax);
 		totalPrice = basecarPrice +adminfee+ taxPay;
 		
 		financePrice = totalPrice - downPayment; 

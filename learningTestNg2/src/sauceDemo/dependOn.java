@@ -5,22 +5,26 @@ import org.testng.annotations.Test;
 public class dependOn {
 	
 	
-	@Test(priority = 1)
+	@Test(groups = {"sanity"})
 	public static void TestB() {
 		System.out.println("Test B");
 	}
 	
-	@Test (priority = 2)
+	public static void TestE() {
+		System.out.println("Test B");
+	}
+	
+	@Test (groups = {"regression"})
 	public static void TestC() {
 		System.out.println("Test C");
 	}
 	
-	@Test(priority = 3)
+	@Test(groups = {"sanaa", "regression"})
 	public static void TestA() {
 		System.out.println("Test A");
 	}
 	
-	@Test(dependsOnMethods = "TestB")
+	@Test(groups = {"sanaa"})
 	public static void TestD() {
 		System.out.println("Test D");
 	}

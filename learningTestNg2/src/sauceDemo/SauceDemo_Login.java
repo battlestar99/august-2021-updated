@@ -34,7 +34,7 @@ public class SauceDemo_Login {
 		Thread.sleep(2000);
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 3)
 	@Parameters({"password"})
 	public void password(String password) throws InterruptedException {
 		WebElement passwordTextBox = driver.findElement(By.xpath("//*[@id=\"password\"]"));
@@ -42,7 +42,7 @@ public class SauceDemo_Login {
 		Thread.sleep(2000);
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void loginButtonClick() throws InterruptedException {
 		WebElement loginButton = driver.findElement(By.xpath("//*[@id=\"login-button\"]"));
 		loginButton.click();

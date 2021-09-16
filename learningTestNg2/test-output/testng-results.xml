@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="44" started-at="2021-09-15T20:56:07 EDT" finished-at="2021-09-15T20:56:07 EDT">
+    <groups>
+      <group name="sanaa">
+        <method signature="dependOn.TestA()[pri:0, instance:sauceDemo.dependOn@3632be31]" name="TestA" class="sauceDemo.dependOn"/>
+      </group> <!-- sanaa -->
+      <group name="regression">
+        <method signature="dependOn.TestA()[pri:0, instance:sauceDemo.dependOn@3632be31]" name="TestA" class="sauceDemo.dependOn"/>
+        <method signature="dependOn.TestC()[pri:0, instance:sauceDemo.dependOn@3632be31]" name="TestC" class="sauceDemo.dependOn"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="dependOn.TestB()[pri:0, instance:sauceDemo.dependOn@3632be31]" name="TestB" class="sauceDemo.dependOn"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test name="Test1" duration-ms="44" started-at="2021-09-15T20:56:07 EDT" finished-at="2021-09-15T20:56:07 EDT">
+      <class name="sauceDemo.dependOn">
+        <test-method status="PASS" signature="TestA()[pri:0, instance:sauceDemo.dependOn@3632be31]" name="TestA" duration-ms="7" started-at="2021-09-15T20:56:07 EDT" finished-at="2021-09-15T20:56:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestA -->
+        <test-method status="PASS" signature="TestB()[pri:0, instance:sauceDemo.dependOn@3632be31]" name="TestB" duration-ms="1" started-at="2021-09-15T20:56:07 EDT" finished-at="2021-09-15T20:56:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestB -->
+        <test-method status="PASS" signature="TestC()[pri:0, instance:sauceDemo.dependOn@3632be31]" name="TestC" duration-ms="2" started-at="2021-09-15T20:56:07 EDT" finished-at="2021-09-15T20:56:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestC -->
+      </class> <!-- sauceDemo.dependOn -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

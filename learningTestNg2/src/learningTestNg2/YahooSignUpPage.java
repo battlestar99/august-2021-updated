@@ -14,7 +14,7 @@ public class YahooSignUpPage {
 
 	@BeforeTest
 	public void initializingBrowser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Agile1Tech\\Desktop\\libraries\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://login.yahoo.com/account/create");
 	}

@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 import pageObject.signinPage;
+import utilityPackage.UtilityClass;
 
 public class RegistationOfAutomationPractice {
 	WebDriver driver;
@@ -100,24 +101,29 @@ public class RegistationOfAutomationPractice {
 	public void dateOfBirth() throws InterruptedException {
 		WebElement DateofBirth = driver.findElement(By.id("days"));
 
-		Select dofb = new Select(DateofBirth);
-
-		dofb.selectByValue("8");
+//		Select dofb = new Select(DateofBirth);
+//
+//		dofb.selectByValue("8");
+		UtilityClass.selectFunction(DateofBirth, "8");
+		
 		Thread.sleep(3000);
 		// day
 		WebElement month = driver.findElement(By.name("months"));
 
-		Select md = new Select(month);
-
-		md.selectByIndex(2);
+//		Select md = new Select(month);
+//
+//		md.selectByIndex(2);
+		
+		UtilityClass.selectFunction(month, "5");
 
 		// year
 		WebElement year = driver.findElement(By.id("years"));
 
-		Select yd = new Select(year);
-
-		yd.selectByValue("1982");
-
+//		Select yd = new Select(year);
+//
+//		yd.selectByValue("1982");
+		
+		UtilityClass.selectFunction(year, "1990");
 	}
 
 	@Test(priority = 8)

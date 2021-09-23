@@ -28,10 +28,23 @@ public class StepDefinition {
 		loginPage.UserNameTextBox().sendKeys("standard_user");
 		Thread.sleep(2000);
 	}
+	
+	@When("^user insert a valid \"([^\"]*)\"$")
+	public void user_insert(String username) throws Throwable {
+		loginPage.UserNameTextBox().sendKeys(username);
+		Thread.sleep(2000);
+	}
+	
 
 	@When("^user insert valid password$")
 	public void user_insert_valid_password() throws Throwable {
 		loginPage.passwordTextBox().sendKeys("secret_sauce");
+		Thread.sleep(2000);
+	}
+	
+	@When("^user insert a valid \"([^\"]*)\"$")
+	public void user_insert_valid(String password) throws Throwable {
+		loginPage.passwordTextBox().sendKeys(password);
 		Thread.sleep(2000);
 	}
 
@@ -46,5 +59,8 @@ public class StepDefinition {
 	public void user_should_be_able_to_login() throws Throwable {
 		Assert.assertEquals("https://www.saucedemo.com/inventory.html", driver.getCurrentUrl());
 	}
+	
+	
+	
 
 }

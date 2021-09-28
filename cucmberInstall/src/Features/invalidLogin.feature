@@ -2,7 +2,7 @@ Feature: login to the sauce demo
 
   Background: 
   Scenario Outline: invalid login
-  @smoke
+
 	Given user is in login page
 
     When user insert new valid "<username>"

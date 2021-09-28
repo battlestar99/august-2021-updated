@@ -14,8 +14,6 @@ import pageObject.SauceDemoLoginPage;
 
 public class SauceDemo_Login {
 	
-
-	
 	WebDriver driver;
 	SauceDemoLoginPage loginPage;
 
@@ -25,12 +23,12 @@ public class SauceDemo_Login {
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
 		Assert.assertEquals("https://www.saucedemo.com/", driver.getCurrentUrl());
-		loginPage = new SauceDemoLoginPage(driver);
+		loginPage = new SauceDemoLoginPage();
 	}
 	
 	@Test(priority = 1)
 	public void userName() throws InterruptedException {
-		loginPage.UserNameTextBox().sendKeys("standard_user");;
+		loginPage.UserNameTextBox().sendKeys("standard_user");
 		Thread.sleep(2000);
 	}
 	

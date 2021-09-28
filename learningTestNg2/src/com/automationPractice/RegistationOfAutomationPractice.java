@@ -111,7 +111,6 @@ public class RegistationOfAutomationPractice {
 		WebElement month = driver.findElement(By.name("months"));
 
 //		Select md = new Select(month);
-//
 //		md.selectByIndex(2);
 		
 		UtilityClass.selectFunction(month, "5");

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="Test1(failed)" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test1(failed)">
     <parameter name="firstName" value="sobia"/>
     <parameter name="browser" value="chrome"/>
-    <parameter name="emailAdd" value="sobia123saf456@gmail.com"/>
+    <parameter name="emailAdd" value="sobiaasfas123saf456@gmail.com"/>
     <classes>
       <class name="com.automationPractice.RegistationOfAutomationPractice">
         <methods>
@@ -23,4 +23,29 @@
       </class> <!-- com.automationPractice.RegistationOfAutomationPractice -->
     </classes>
   </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="firstName" value="GK"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="emailAdd" value="gk123344@gmail.com"/>
+    <classes>
+      <class name="com.automationPractice.RegistationOfAutomationPractice">
+        <methods>
+          <include name="password"/>
+          <include name="firstName"/>
+          <include name="createaccount"/>
+          <include name="validateUserAbleToRegister"/>
+          <include name="Signin"/>
+          <include name="newsLetter"/>
+          <include name="validateUserName"/>
+          <include name="address"/>
+          <include name="lastName"/>
+          <include name="initializingBrowser"/>
+          <include name="mobile"/>
+          <include name="createAccountForm"/>
+          <include name="dateOfBirth"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- com.automationPractice.RegistationOfAutomationPractice -->
+    </classes>
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

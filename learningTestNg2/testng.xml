@@ -11,14 +11,14 @@
   </test> <!-- Test -->
  
   
-<!--   <test thread-count="5" name="Test2"> -->
-<!--     <parameter name = "firstName" value = "GK"/> -->
-<!--     <parameter name = "emailAdd" value = "gk123344@gmail.com"/> -->
-<!--     <parameter name = "browser" value = "firefox"/> -->
-<!--     <classes> -->
-<!--       <class name="com.automationPractice.RegistationOfAutomationPractice"/> -->
-<!--     </classes> -->
-<!--   </test> Test -->
+  <test thread-count="5" name="Test2">
+    <parameter name = "firstName" value = "GK"/>
+    <parameter name = "emailAdd" value = "gk123344@gmail.com"/>
+    <parameter name = "browser" value = "firefox"/>
+    <classes>
+      <class name="com.automationPractice.RegistationOfAutomationPractice"/>
+    </classes>
+  </test> 
   
 <!--   <test thread-count="5" name="Test3"> -->
 <!--     <parameter name = "firstName" value = "GK"/> -->

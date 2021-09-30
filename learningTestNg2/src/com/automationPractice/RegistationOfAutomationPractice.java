@@ -1,12 +1,16 @@
 package com.automationPractice;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -19,26 +23,29 @@ import utilityPackage.UtilityClass;
 public class RegistationOfAutomationPractice {
 	WebDriver driver;
 	signinPage signinPageObj;
-
+	WebDriverWait wait;
 	@BeforeTest
 	@Parameters({"browser"})
 	public void initializingBrowser(String browser) {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Agile1Tech\\Desktop\\libraries\\chromedriver.exe");
-		driver = new ChromeDriver();
-//		if (browser == "chrome") {
-//			System.setProperty("webdriver.chrome.driver",
-//					"C:\\Users\\Agile1Tech\\Desktop\\libraries\\chromedriver.exe");
-//			driver = new ChromeDriver();
-//		} else if (browser == "firefox") {
-//			System.setProperty("webdriver.firefox.driver",
-//					"C:\\Users\\Agile1Tech\\Desktop\\libraries\\chromedriver.exe");
-//			driver = new FirefoxDriver();
-//		} else {
-//			System.setProperty("webdriver.ie.driver", "user.dir\\driver\\chromedriver.exe");
-//			driver = new InternetExplorerDriver();
-//		}
+//		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Agile1Tech\\Desktop\\libraries\\chromedriver.exe");
+//		driver = new ChromeDriver();
+		if (browser.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					"driver\\chromedriver.exe");
+			driver = new ChromeDriver();
+		} else if(browser.equals("firefox")) {
+			System.setProperty("webdriver.firefox.driver",
+					"driver\\geckodriver.exe");
+			driver = new FirefoxDriver();
+		} else {
+			System.setProperty("webdriver.ie.driver", 
+					"driver\\internetexplorerdriver.exe");
+			driver = new InternetExplorerDriver();
+		}
 		driver.get("http://automationpractice.com/index.php");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		wait = new WebDriverWait(driver, 40);
 		signinPageObj = new signinPage(driver);
 
 	}
@@ -63,6 +70,7 @@ public class RegistationOfAutomationPractice {
 		email.sendKeys(emailAdd);
 
 		WebElement createanaccount = driver.findElement(By.xpath("//*[@id=\"SubmitCreate\"]/span"));
+		wait.until(ExpectedConditions.visibilityOfElementLocated((By) createanaccount));
 		createanaccount.click();
 
 		Thread.sleep(3000);

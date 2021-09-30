@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/12</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 15 20:36:39 EDT 2021</td>
+<td>Started on:</td><td>Wed Sep 29 17:54:26 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (165 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (122 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,45 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.automationPractice.RegistationOfAutomationPractice.initializingBrowser()'><b>initializingBrowser</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice<br>Parameters: firefox</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1410360201", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1410360201'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2106165633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2106165633'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -115,13 +127,30 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
@@ -136,7 +165,7 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.automationPractice.RegistationOfAutomationPractice.closebrowser()'><b>closebrowser</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
 <td></td>
-<td>-1631752599</td>
+<td>-1632952466</td>
 <td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -147,136 +176,46 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.newsLetter()'><b>newsLetter</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1830704858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1830704858'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.Signin()'><b>Signin</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace72574390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace72574390'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
 <td title='com.automationPractice.RegistationOfAutomationPractice.password()'><b>password</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2135787114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2135787114'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1593165620", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1593165620'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -289,351 +228,74 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.createaccount()'><b>createaccount</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice<br>Parameters: gk123344@gmail.com</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1259932914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1259932914'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.address()'><b>address</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311250048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace311250048'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.mobile()'><b>mobile</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace31520365", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace31520365'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.validateUserName()'><b>validateUserName</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace880209627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace880209627'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.validateUserAbleToRegister()'><b>validateUserAbleToRegister</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace725730799", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace725730799'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
-<tr>
-<td title='com.automationPractice.RegistationOfAutomationPractice.firstName()'><b>firstName</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice<br>Parameters: GK</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1683744299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1683744299'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-	at org.testng.TestRunner.run(TestRunner.java:589)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
 <tr>
 <td title='com.automationPractice.RegistationOfAutomationPractice.lastName()'><b>lastName</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2083548034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2083548034'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384617262", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384617262'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -646,45 +308,154 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.newsLetter()'><b>newsLetter</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917768476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace917768476'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
 <tr>
 <td title='com.automationPractice.RegistationOfAutomationPractice.createAccountForm()'><b>createAccountForm</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2067415599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2067415599'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace400064818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace400064818'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -697,45 +468,634 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.address()'><b>address</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1181815135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1181815135'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.mobile()'><b>mobile</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace919446210", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace919446210'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.validateUserAbleToRegister()'><b>validateUserAbleToRegister</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace57241990", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace57241990'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.createaccount()'><b>createaccount</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice<br>Parameters: gk123344@gmail.com</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2694936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2694936'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.Signin()'><b>Signin</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1808009213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1808009213'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.firstName()'><b>firstName</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice<br>Parameters: GK</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1574749319", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1574749319'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+</pre></div></td>
+<td>0</td>
+<td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
+<tr>
+<td title='com.automationPractice.RegistationOfAutomationPractice.validateUserName()'><b>validateUserName</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace360936478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace360936478'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>
 <tr>
 <td title='com.automationPractice.RegistationOfAutomationPractice.dateOfBirth()'><b>dateOfBirth</b><br>Test class: com.automationPractice.RegistationOfAutomationPractice</td>
-<td><div><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1456445590", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1456445590'><pre>java.lang.IllegalStateException: The driver executable does not exist: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\user.dir\driver\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:199)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:121)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:116)
-	at org.openqa.selenium.ie.InternetExplorerDriverService.access$0(InternetExplorerDriverService.java:1)
-	at org.openqa.selenium.ie.InternetExplorerDriverService$Builder.findDefaultExecutable(InternetExplorerDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296)
-	at org.openqa.selenium.ie.InternetExplorerDriver.setupService(InternetExplorerDriver.java:251)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:172)
-	at org.openqa.selenium.ie.InternetExplorerDriver.&lt;init&gt;(InternetExplorerDriver.java:146)
-	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:37)
+<td><div><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace225909961", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace225909961'><pre>org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+null
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:120)
+	at com.automationPractice.RegistationOfAutomationPractice.initializingBrowser(RegistationOfAutomationPractice.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -748,13 +1108,30 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
 	at org.testng.TestRunner.run(TestRunner.java:589)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.firefox.UnableToCreateProfileException: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b&apos;, time: &apos;2016-03-15 16:57:40&apos;
+System info: host: &apos;DESKTOP-E69K95O&apos;, ip: &apos;192.168.5.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:427)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:85)
+	... 31 more
+Caused by: java.io.IOException: Can only install from a zip file, an XPI or a directory: C:\Users\Agile1Tech\Desktop\July_2021_workspace\learningTestNg2\driver\geckodriver.exe
+	at org.openqa.selenium.firefox.internal.FileExtension.writeTo(FileExtension.java:54)
+	at org.openqa.selenium.firefox.FirefoxProfile.installExtensions(FirefoxProfile.java:443)
+	at org.openqa.selenium.firefox.FirefoxProfile.layoutOnDisk(FirefoxProfile.java:421)
+	... 32 more
 </pre></div></td>
 <td>0</td>
 <td>com.automationPractice.RegistationOfAutomationPractice@396f6598</td></tr>

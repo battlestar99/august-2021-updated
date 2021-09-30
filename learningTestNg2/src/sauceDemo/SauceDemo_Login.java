@@ -11,11 +11,13 @@ import org.testng.annotations.Test;
 
 import junit.framework.Assert;
 import pageObject.SauceDemoLoginPage;
+import pageObject.cartPage;
 
 public class SauceDemo_Login {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	SauceDemoLoginPage loginPage;
+	cartPage cPage;
 
 	@BeforeTest
 	public void initializingBrowser() {
@@ -23,7 +25,8 @@ public class SauceDemo_Login {
 		driver = new ChromeDriver();
 		driver.get("https://www.saucedemo.com/");
 		Assert.assertEquals("https://www.saucedemo.com/", driver.getCurrentUrl());
-		loginPage = new SauceDemoLoginPage();
+		loginPage = new SauceDemoLoginPage(driver);
+		cPage = new cartPage();
 	}
 	
 	@Test(priority = 1)
